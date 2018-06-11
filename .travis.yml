@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: GQBGUAO4B4Zlip3AHgFoc6+OfVdJfFYhZvROWvLBI07TceGHDwuFSA2FD3auzyLmgaxZwQlOdmUPe294GbnlMLtjfkGZkbA4uKQxk0WKNefq/46lrDDbvNUK/R4vypXzt0z8aqCC8QfCva7BQZC4XoNUfhtMcx7Y9F3FTT4mFBGNmjc/IsXvS7hJ7XX2R/Q/kIh3TFlWvs2ijvBxRKNh+tbTDiAvaGBLMsxcUSVgMX8ujrZm4NLoXpfqNnNTx8hFMsmrHi8VulQBxEmjFq+PABbCeReRYhiycJb0U5UMjE8b1Ipsu8qWvo25BXi4jIkU4mk4rKot/I1Lk0bQ0YjHET+sSv2+TTmW2emq/yUKgT5zuZeF9gPIWN2/GurNmVJ5JTH4Y2ohOROLd9/YNMEnw/JRAXmkRFQZFhcIup28hZy5ZAjnvLTfRmJysiz7feunVMsxd35wu8tbjX7ylrHOT7JQ8V6Dz+5Pnn8kn600opXTkH9d98w6GCUOGxKOw5xis2tjUqpfsHmw7//MyJ3sHt2DkYXqlTubDhS8GsVhQ4MGrfm2/N9ig8cQ1Y4y7NB9mXvNiXR+pXAlNrbB/NUMcNaj1dWCCL7Kogu53yBTTTlqooFoegQZ+UMQTPPhFV6AgmHa77hZzhS2+pMzxhq1YDgtWtrwggyCw3M5Tqb+uhw=
+  app: kttm-server
+  on:
+    repo: kttm-development/kttm-server
