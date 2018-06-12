@@ -1,0 +1,26 @@
+[
+    {
+        "username": "user1",
+        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
+        "firstName": "Trent",
+        "lastName": "Duncan"
+    },
+    {
+        "username": "user2",
+        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
+        "firstName": "Megan",
+        "lastName": "Leonardo"
+    },
+    {
+        "username": "user3",
+        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
+        "firstName": "Tom",
+        "lastName": "Haborak"
+    },
+    {
+        "username": "user4",
+        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
+        "firstName": "Kevin",
+        "lastName": "Murphy"
+    }
+]
