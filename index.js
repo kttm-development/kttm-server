@@ -13,7 +13,7 @@ const localStrategy = require('./passport/local');
 const jwtStrategy = require('./passport/jwt');
 
 const usersRouter = require('./routes/users');
-// const authRouter = require('./routes/auth');
+const authRouter = require('./routes/auth');
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use(express.json());
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
-// app.use('/api', authRouter);
+app.use('/api', authRouter);
 app.use('/api', usersRouter);
 
 
