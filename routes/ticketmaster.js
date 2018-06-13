@@ -3,8 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const {TICKETMASTERAPIKEY}  = require('../config.js');
-const request = require('request');
-
+const request = require('ajax-request');
 const mongoose = require('mongoose');
 
 
@@ -12,9 +11,24 @@ const mongoose = require('mongoose');
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
 router.get('/concerts/:location/:genre', (req, res) => {
   const { location, genre } = req.params;
-  const url = `https://app.ticketmaster.com/discovery/v2/events?classificationName=music&genreId=${genre}&dmaId=${location}&apikey=${TICKETMASTERAPIKEY}`;
-  request.get(url, (error, response, body) => {
-    res.send(body);
+  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genre}&dmaId=${location}&apikey=${TICKETMASTERAPIKEY}`;
+  request({
+    url: url,
+    method: 'GET',
+    json: true
+  }, (err, response, body) => {
+    let array = body._embedded.events;
+    let concerts = array.map(item => {
+      return {
+        id: item.id,
+        name: item.name,
+        img: item.images[0].url,
+        location: `${item._embedded.venues[0].name}` + ` ${item._embedded.venues[0].city.name}` + ` ${item._embedded.venues[0].address.line1}`,
+        date: item.dates.start.localDate,
+        time: item.dates.start.localTime
+      };
+    });
+    res.json(concerts);
   });
 });
 
