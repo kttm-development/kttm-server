@@ -1,0 +1,236 @@
+{
+    "dma": [
+        {
+            "ID": "1",
+            "Market": "Birmingham & More"
+        },
+        {
+            "ID": "2",
+            "Market": "Charlotte"
+        },
+        {
+            "ID": "3",
+            "Market": "Chicagoland & Northern IL"
+        },
+        {
+            "ID": "4",
+            "Market": "Cincinnati & Dayton"
+        },
+        {
+            "ID": "5",
+            "Market": "Dallas - Fort Worth & More"
+        },
+        {
+            "ID": "6",
+            "Market": "Denver & More"
+        },
+        {
+            "ID": "7",
+            "Market": "Detroit, Toledo & More"
+        },
+        {
+            "ID": "8",
+            "Market": "El Paso & New Mexico"
+        },
+        {
+            "ID": "9",
+            "Market": "Grand Rapids & More"
+        },
+        {
+            "ID": "10",
+            "Market": "Greater Atlanta Area"
+        },
+        {
+            "ID": "11",
+            "Market": "Greater Boston Area"
+        },
+        {
+            "ID": "12",
+            "Market": "Cleveland, Youngstown & More"
+        },
+        {
+            "ID": "13",
+            "Market": "Greater Columbus Area"
+        },
+        {
+            "ID": "14",
+            "Market": "Greater Las Vegas Area"
+        },
+        {
+            "ID": "15",
+            "Market": "Greater Miami Area"
+        },
+        {
+            "ID": "16",
+            "Market": "Minneapolis/St. Paul & More"
+        },
+        {
+            "ID": "17",
+            "Market": "Greater Orlando Area"
+        },
+        {
+            "ID": "18",
+            "Market": "Greater Philadelphia Area"
+        },
+        {
+            "ID": "19",
+            "Market": "Greater Pittsburgh Area"
+        },
+        {
+            "ID": "20",
+            "Market": "Greater San Diego Area"
+        },
+        {
+            "ID": "21",
+            "Market": "Greater Tampa Area"
+        },
+        {
+            "ID": "22",
+            "Market": "Houston & More"
+        },
+        {
+            "ID": "23",
+            "Market": "Indianapolis & More"
+        },
+        {
+            "ID": "24",
+            "Market": "Iowa"
+        },
+        {
+            "ID": "25",
+            "Market": "Jacksonville & More"
+        },
+        {
+            "ID": "26",
+            "Market": "Kansas City & More"
+        },
+        {
+            "ID": "27",
+            "Market": "Greater Los Angeles Area"
+        },
+        {
+            "ID": "28",
+            "Market": "Louisville & Lexington"
+        },
+        {
+            "ID": "29",
+            "Market": "Memphis, Little Rock & More"
+        },
+        {
+            "ID": "30",
+            "Market": "Milwaukee & WI"
+        },
+        {
+            "ID": "31",
+            "Market": "Nashville, Knoxville & More"
+        },
+        {
+            "ID": "33",
+            "Market": "New England"
+        },
+        {
+            "ID": "34",
+            "Market": "New Orleans & More"
+        },
+        {
+            "ID": "35",
+            "Market": "New York/Tri-State Area"
+        },
+        {
+            "ID": "36",
+            "Market": "Phoenix & Tucson"
+        },
+        {
+            "ID": "37",
+            "Market": "Portland & More"
+        },
+        {
+            "ID": "38",
+            "Market": "Raleigh & Durham"
+        },
+        {
+            "ID": "39",
+            "Market": "Saint Louis & More"
+        },
+        {
+            "ID": "40",
+            "Market": "San Antonio & Austin"
+        },
+        {
+            "ID": "41",
+            "Market": "N. California/N. Nevada"
+        },
+        {
+            "ID": "42",
+            "Market": "Greater Seattle Area"
+        },
+        {
+            "ID": "43",
+            "Market": "North & South Dakota"
+        },
+        {
+            "ID": "44",
+            "Market": "Upstate New York"
+        },
+        {
+            "ID": "45",
+            "Market": "Utah & Montana"
+        },
+        {
+            "ID": "46",
+            "Market": "Virginia"
+        },
+        {
+            "ID": "47",
+            "Market": "Washington, DC and Maryland"
+        },
+        {
+            "ID": "48",
+            "Market": "West Virginia"
+        },
+        {
+            "ID": "49",
+            "Market": "Hawaii"
+        },
+        {
+            "ID": "50",
+            "Market": "Alaska"
+        },
+        {
+            "ID": "52",
+            "Market": "Nebraska"
+        },
+        {
+            "ID": "53",
+            "Market": "Springfield"
+        },
+        {
+            "ID": "54",
+            "Market": "Central Illinois"
+        },
+        {
+            "ID": "55",
+            "Market": "Northern New Jersey"
+        },
+        {
+            "ID": "121",
+            "Market": "South Carolina"
+        },
+        {
+            "ID": "122",
+            "Market": "South Texas"
+        },
+        {
+            "ID": "123",
+            "Market": "Beaumont"
+        },
+        {
+            "ID": "124",
+            "Market": "Connecticut"
+        },
+        {
+            "ID": "125",
+            "Market": "Oklahoma"
+        }
+    ]
+}
