@@ -9,12 +9,16 @@ const passport = require('passport');
 const { PORT, CLIENT_ORIGIN } = require('./config');
 const { dbConnect } = require('./db-mongoose');
 
+
+
 const localStrategy = require('./passport/local');
 const jwtStrategy = require('./passport/jwt');
 
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+const ticketmasterRouter = require('./routes/ticketmaster');
 const genreRouter = require('./routes/genres');
+
 
 const app = express();
 
@@ -30,6 +34,7 @@ app.use(
   })
 );
 
+app.use('/api', ticketmasterRouter);
 app.use(express.json());
 
 

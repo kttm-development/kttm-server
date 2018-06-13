@@ -13,6 +13,7 @@
     "travis": "npm run mocha"
   },
   "dependencies": {
+    "ajax-request": "^1.2.3",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
