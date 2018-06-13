@@ -14,6 +14,7 @@ const jwtStrategy = require('./passport/jwt');
 
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+const genreRouter = require('./routes/genres');
 
 const app = express();
 
@@ -37,6 +38,7 @@ passport.use(jwtStrategy);
 
 app.use('/api', authRouter);
 app.use('/api', usersRouter);
+app.use('/api', genreRouter);
 
 
 function runServer(port = PORT) {
