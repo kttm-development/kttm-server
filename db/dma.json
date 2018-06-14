@@ -1,236 +1,1078 @@
-{
-    "dma": [
-        {
-            "ID": "1",
-            "Market": "Birmingham & More"
-        },
-        {
-            "ID": "2",
-            "Market": "Charlotte"
-        },
-        {
-            "ID": "3",
-            "Market": "Chicagoland & Northern IL"
-        },
-        {
-            "ID": "4",
-            "Market": "Cincinnati & Dayton"
-        },
-        {
-            "ID": "5",
-            "Market": "Dallas - Fort Worth & More"
-        },
-        {
-            "ID": "6",
-            "Market": "Denver & More"
-        },
-        {
-            "ID": "7",
-            "Market": "Detroit, Toledo & More"
-        },
-        {
-            "ID": "8",
-            "Market": "El Paso & New Mexico"
-        },
-        {
-            "ID": "9",
-            "Market": "Grand Rapids & More"
-        },
-        {
-            "ID": "10",
-            "Market": "Greater Atlanta Area"
-        },
-        {
-            "ID": "11",
-            "Market": "Greater Boston Area"
-        },
-        {
-            "ID": "12",
-            "Market": "Cleveland, Youngstown & More"
-        },
-        {
-            "ID": "13",
-            "Market": "Greater Columbus Area"
-        },
-        {
-            "ID": "14",
-            "Market": "Greater Las Vegas Area"
-        },
-        {
-            "ID": "15",
-            "Market": "Greater Miami Area"
-        },
-        {
-            "ID": "16",
-            "Market": "Minneapolis/St. Paul & More"
-        },
-        {
-            "ID": "17",
-            "Market": "Greater Orlando Area"
-        },
-        {
-            "ID": "18",
-            "Market": "Greater Philadelphia Area"
-        },
-        {
-            "ID": "19",
-            "Market": "Greater Pittsburgh Area"
-        },
-        {
-            "ID": "20",
-            "Market": "Greater San Diego Area"
-        },
-        {
-            "ID": "21",
-            "Market": "Greater Tampa Area"
-        },
-        {
-            "ID": "22",
-            "Market": "Houston & More"
-        },
-        {
-            "ID": "23",
-            "Market": "Indianapolis & More"
-        },
-        {
-            "ID": "24",
-            "Market": "Iowa"
-        },
-        {
-            "ID": "25",
-            "Market": "Jacksonville & More"
-        },
-        {
-            "ID": "26",
-            "Market": "Kansas City & More"
-        },
-        {
-            "ID": "27",
-            "Market": "Greater Los Angeles Area"
-        },
-        {
-            "ID": "28",
-            "Market": "Louisville & Lexington"
-        },
-        {
-            "ID": "29",
-            "Market": "Memphis, Little Rock & More"
-        },
-        {
-            "ID": "30",
-            "Market": "Milwaukee & WI"
-        },
-        {
-            "ID": "31",
-            "Market": "Nashville, Knoxville & More"
-        },
-        {
-            "ID": "33",
-            "Market": "New England"
-        },
-        {
-            "ID": "34",
-            "Market": "New Orleans & More"
-        },
-        {
-            "ID": "35",
-            "Market": "New York/Tri-State Area"
-        },
-        {
-            "ID": "36",
-            "Market": "Phoenix & Tucson"
-        },
-        {
-            "ID": "37",
-            "Market": "Portland & More"
-        },
-        {
-            "ID": "38",
-            "Market": "Raleigh & Durham"
-        },
-        {
-            "ID": "39",
-            "Market": "Saint Louis & More"
-        },
-        {
-            "ID": "40",
-            "Market": "San Antonio & Austin"
-        },
-        {
-            "ID": "41",
-            "Market": "N. California/N. Nevada"
-        },
-        {
-            "ID": "42",
-            "Market": "Greater Seattle Area"
-        },
-        {
-            "ID": "43",
-            "Market": "North & South Dakota"
-        },
-        {
-            "ID": "44",
-            "Market": "Upstate New York"
-        },
-        {
-            "ID": "45",
-            "Market": "Utah & Montana"
-        },
-        {
-            "ID": "46",
-            "Market": "Virginia"
-        },
-        {
-            "ID": "47",
-            "Market": "Washington, DC and Maryland"
-        },
-        {
-            "ID": "48",
-            "Market": "West Virginia"
-        },
-        {
-            "ID": "49",
-            "Market": "Hawaii"
-        },
-        {
-            "ID": "50",
-            "Market": "Alaska"
-        },
-        {
-            "ID": "52",
-            "Market": "Nebraska"
-        },
-        {
-            "ID": "53",
-            "Market": "Springfield"
-        },
-        {
-            "ID": "54",
-            "Market": "Central Illinois"
-        },
-        {
-            "ID": "55",
-            "Market": "Northern New Jersey"
-        },
-        {
-            "ID": "121",
-            "Market": "South Carolina"
-        },
-        {
-            "ID": "122",
-            "Market": "South Texas"
-        },
-        {
-            "ID": "123",
-            "Market": "Beaumont"
-        },
-        {
-            "ID": "124",
-            "Market": "Connecticut"
-        },
-        {
-            "ID": "125",
-            "Market": "Oklahoma"
-        }
-    ]
-}
+[
+    {
+        "dmaId": 212,
+        "location": "Abilene - Sweetwater"
+    },
+    {
+        "dmaId": 213,
+        "location": "Albany - Schenectady - Troy"
+    },
+    {
+        "dmaId": 214,
+        "location": "Albany, GA"
+    },
+    {
+        "dmaId": 215,
+        "location": "Albuquerque - Santa Fe"
+    },
+    {
+        "dmaId": 216,
+        "location": "Alexandria, LA"
+    },
+    {
+        "dmaId": 217,
+        "location": "Alpena"
+    },
+    {
+        "dmaId": 218,
+        "location": "Amarillo"
+    },
+    {
+        "dmaId": 219,
+        "location": "Anchorage"
+    },
+    {
+        "dmaId": 220,
+        "location": "Atlanta"
+    },
+    {
+        "dmaId": 221,
+        "location": "Augusta"
+    },
+    {
+        "dmaId": 222,
+        "location": "Austin"
+    },
+    {
+        "dmaId": 223,
+        "location": "Bakersfield"
+    },
+    {
+        "dmaId": 224,
+        "location": "Baltimore"
+    },
+    {
+        "dmaId": 225,
+        "location": "Bangor"
+    },
+    {
+        "dmaId": 226,
+        "location": "Baton Rouge"
+    },
+    {
+        "dmaId": 227,
+        "location": "Beaumont - Port Arthur"
+    },
+    {
+        "dmaId": 228,
+        "location": "Bend, OR"
+    },
+    {
+        "dmaId": 229,
+        "location": "Billings"
+    },
+    {
+        "dmaId": 230,
+        "location": "Biloxi - Gulfport"
+    },
+    {
+        "dmaId": 231,
+        "location": "Binghamton"
+    },
+    {
+        "dmaId": 232,
+        "location": "Birmingham (Anniston and Tuscaloosa)"
+    },
+    {
+        "dmaId": 233,
+        "location": "Bluefield - Beckley - Oak Hill"
+    },
+    {
+        "dmaId": 234,
+        "location": "Boise"
+    },
+    {
+        "dmaId": 235,
+        "location": "Boston (Manchester)"
+    },
+    {
+        "dmaId": 236,
+        "location": "Bowling Green"
+    },
+    {
+        "dmaId": 237,
+        "location": "Buffalo"
+    },
+    {
+        "dmaId": 238,
+        "location": "Burlington - Plattsburgh"
+    },
+    {
+        "dmaId": 239,
+        "location": "Butte - Bozeman"
+    },
+    {
+        "dmaId": 240,
+        "location": "Casper - Riverton"
+    },
+    {
+        "dmaId": 241,
+        "location": "Cedar Rapids - Waterloo & Dubuque"
+    },
+    {
+        "dmaId": 242,
+        "location": "Champaign & Springfield - Decatur"
+    },
+    {
+        "dmaId": 243,
+        "location": "Charleston, SC"
+    },
+    {
+        "dmaId": 244,
+        "location": "Charleston-Huntington"
+    },
+    {
+        "dmaId": 245,
+        "location": "Charlotte"
+    },
+    {
+        "dmaId": 246,
+        "location": "Charlottesville"
+    },
+    {
+        "dmaId": 247,
+        "location": "Chattanooga"
+    },
+    {
+        "dmaId": 248,
+        "location": "Cheyenne - Scottsbluff"
+    },
+    {
+        "dmaId": 249,
+        "location": "Chicago"
+    },
+    {
+        "dmaId": 250,
+        "location": "Chico - Redding"
+    },
+    {
+        "dmaId": 251,
+        "location": "Cincinnati"
+    },
+    {
+        "dmaId": 252,
+        "location": "Clarksburg - Weston"
+    },
+    {
+        "dmaId": 253,
+        "location": "Cleveland"
+    },
+    {
+        "dmaId": 254,
+        "location": "Colorado Springs - Pueblo"
+    },
+    {
+        "dmaId": 255,
+        "location": "Columbia - Jefferson City"
+    },
+    {
+        "dmaId": 256,
+        "location": "Columbia, SC"
+    },
+    {
+        "dmaId": 257,
+        "location": "Columbus - Tupelo - West Point"
+    },
+    {
+        "dmaId": 258,
+        "location": "Columbus, GA"
+    },
+    {
+        "dmaId": 259,
+        "location": "Columbus, OH"
+    },
+    {
+        "dmaId": 260,
+        "location": "Corpus Christi"
+    },
+    {
+        "dmaId": 261,
+        "location": "Dallas - Fort Worth"
+    },
+    {
+        "dmaId": 262,
+        "location": "Davenport - Rock Island - Moline"
+    },
+    {
+        "dmaId": 263,
+        "location": "Dayton"
+    },
+    {
+        "dmaId": 264,
+        "location": "Denver"
+    },
+    {
+        "dmaId": 265,
+        "location": "Des Moines - Ames"
+    },
+    {
+        "dmaId": 266,
+        "location": "Detroit"
+    },
+    {
+        "dmaId": 267,
+        "location": "Dothan"
+    },
+    {
+        "dmaId": 268,
+        "location": "Duluth - Superior"
+    },
+    {
+        "dmaId": 269,
+        "location": "El Paso"
+    },
+    {
+        "dmaId": 270,
+        "location": "Elmira"
+    },
+    {
+        "dmaId": 271,
+        "location": "Erie"
+    },
+    {
+        "dmaId": 272,
+        "location": "Eugene"
+    },
+    {
+        "dmaId": 273,
+        "location": "Eureka"
+    },
+    {
+        "dmaId": 274,
+        "location": "Evansville"
+    },
+    {
+        "dmaId": 275,
+        "location": "Fairbanks"
+    },
+    {
+        "dmaId": 276,
+        "location": "Fargo - Valley City"
+    },
+    {
+        "dmaId": 277,
+        "location": "Flint - Saginaw - Bay City"
+    },
+    {
+        "dmaId": 278,
+        "location": "Florence - Myrtle Beach"
+    },
+    {
+        "dmaId": 279,
+        "location": "Fort Myers - Naples"
+    },
+    {
+        "dmaId": 280,
+        "location": "Fort Smith - Fayetteville - Springdale - Rogers"
+    },
+    {
+        "dmaId": 281,
+        "location": "Fort Wayne"
+    },
+    {
+        "dmaId": 282,
+        "location": "Fresno - Visalia"
+    },
+    {
+        "dmaId": 283,
+        "location": "Gainesville"
+    },
+    {
+        "dmaId": 284,
+        "location": "Glendive"
+    },
+    {
+        "dmaId": 285,
+        "location": "Grand Junction - Montrose"
+    },
+    {
+        "dmaId": 286,
+        "location": "Grand Rapids - Kalamazoo - Battle Creek"
+    },
+    {
+        "dmaId": 287,
+        "location": "Great Falls"
+    },
+    {
+        "dmaId": 288,
+        "location": "Green Bay - Appleton"
+    },
+    {
+        "dmaId": 289,
+        "location": "Greensboro - High Point - Winston-Salem"
+    },
+    {
+        "dmaId": 290,
+        "location": "Greenville - New Bern - Washington"
+    },
+    {
+        "dmaId": 291,
+        "location": "Greenville - Spartansburg - Asheville - Anderson"
+    },
+    {
+        "dmaId": 292,
+        "location": "Greenwood - Greenville"
+    },
+    {
+        "dmaId": 293,
+        "location": "Harlingen - Weslaco - Brownsville - McAllen"
+    },
+    {
+        "dmaId": 294,
+        "location": "Harrisburg - Lancaster - Lebanon - York"
+    },
+    {
+        "dmaId": 295,
+        "location": "Harrisonburg"
+    },
+    {
+        "dmaId": 296,
+        "location": "Hartford & New Haven"
+    },
+    {
+        "dmaId": 297,
+        "location": "Hattiesburg - Laurel"
+    },
+    {
+        "dmaId": 298,
+        "location": "Helena"
+    },
+    {
+        "dmaId": 299,
+        "location": "Honolulu"
+    },
+    {
+        "dmaId": 300,
+        "location": "Houston"
+    },
+    {
+        "dmaId": 301,
+        "location": "Huntsville - Decatur (Florence)"
+    },
+    {
+        "dmaId": 302,
+        "location": "Idaho Falls - Pocatello"
+    },
+    {
+        "dmaId": 303,
+        "location": "Indianapolis"
+    },
+    {
+        "dmaId": 304,
+        "location": "Jackson, MS"
+    },
+    {
+        "dmaId": 305,
+        "location": "Jackson, TN"
+    },
+    {
+        "dmaId": 306,
+        "location": "Jacksonville"
+    },
+    {
+        "dmaId": 307,
+        "location": "Johnstown - Altoona"
+    },
+    {
+        "dmaId": 308,
+        "location": "Jonesboro"
+    },
+    {
+        "dmaId": 309,
+        "location": "Joplin - Pittsburg"
+    },
+    {
+        "dmaId": 310,
+        "location": "Juneau"
+    },
+    {
+        "dmaId": 311,
+        "location": "Kansas City"
+    },
+    {
+        "dmaId": 312,
+        "location": "Knoxville"
+    },
+    {
+        "dmaId": 313,
+        "location": "La Crosse - Eau Claire"
+    },
+    {
+        "dmaId": 314,
+        "location": "Lafayette, IN"
+    },
+    {
+        "dmaId": 315,
+        "location": "Lafayette, LA"
+    },
+    {
+        "dmaId": 316,
+        "location": "Lake Charles"
+    },
+    {
+        "dmaId": 317,
+        "location": "Lansing"
+    },
+    {
+        "dmaId": 318,
+        "location": "Laredo"
+    },
+    {
+        "dmaId": 319,
+        "location": "Las Vegas"
+    },
+    {
+        "dmaId": 320,
+        "location": "Lexington"
+    },
+    {
+        "dmaId": 321,
+        "location": "Lima"
+    },
+    {
+        "dmaId": 322,
+        "location": "Lincoln & Hastings - Kearney"
+    },
+    {
+        "dmaId": 323,
+        "location": "Little Rock - Pine Bluff"
+    },
+    {
+        "dmaId": 324,
+        "location": "Los Angeles"
+    },
+    {
+        "dmaId": 325,
+        "location": "Louisville"
+    },
+    {
+        "dmaId": 326,
+        "location": "Lubbock"
+    },
+    {
+        "dmaId": 327,
+        "location": "Macon"
+    },
+    {
+        "dmaId": 328,
+        "location": "Madison"
+    },
+    {
+        "dmaId": 329,
+        "location": "Mankato"
+    },
+    {
+        "dmaId": 330,
+        "location": "Marquette"
+    },
+    {
+        "dmaId": 331,
+        "location": "Medford - Klamath Falls"
+    },
+    {
+        "dmaId": 332,
+        "location": "Memphis"
+    },
+    {
+        "dmaId": 333,
+        "location": "Meridian"
+    },
+    {
+        "dmaId": 334,
+        "location": "Miami - Fort Lauderdale"
+    },
+    {
+        "dmaId": 335,
+        "location": "Milwaukee"
+    },
+    {
+        "dmaId": 336,
+        "location": "Minneapolis - Saint Paul"
+    },
+    {
+        "dmaId": 337,
+        "location": "Minot - Bismarck - Dickinson"
+    },
+    {
+        "dmaId": 338,
+        "location": "Missoula"
+    },
+    {
+        "dmaId": 339,
+        "location": "Mobile - Pensacola (Fort Walton Beach)"
+    },
+    {
+        "dmaId": 340,
+        "location": "Monroe - El Dorado"
+    },
+    {
+        "dmaId": 341,
+        "location": "Monterey - Salinas"
+    },
+    {
+        "dmaId": 342,
+        "location": "Montgomery (Selma)"
+    },
+    {
+        "dmaId": 343,
+        "location": "Nashville"
+    },
+    {
+        "dmaId": 344,
+        "location": "New Orleans"
+    },
+    {
+        "dmaId": 345,
+        "location": "New York"
+    },
+    {
+        "dmaId": 346,
+        "location": "Norfolk - Portsmouth - Newport News"
+    },
+    {
+        "dmaId": 347,
+        "location": "North Platte"
+    },
+    {
+        "dmaId": 348,
+        "location": "Odessa - Midland"
+    },
+    {
+        "dmaId": 349,
+        "location": "Oklahoma City"
+    },
+    {
+        "dmaId": 350,
+        "location": "Omaha"
+    },
+    {
+        "dmaId": 351,
+        "location": "Orlando - Daytona Beach - Melbourne"
+    },
+    {
+        "dmaId": 352,
+        "location": "Ottumwa - Kirksville"
+    },
+    {
+        "dmaId": 353,
+        "location": "Paducah - Cape Girardeau - Harrisburg - Mt Vernon"
+    },
+    {
+        "dmaId": 354,
+        "location": "Palm Springs"
+    },
+    {
+        "dmaId": 355,
+        "location": "Panama City"
+    },
+    {
+        "dmaId": 356,
+        "location": "Parkersburg"
+    },
+    {
+        "dmaId": 357,
+        "location": "Peoria - Bloomington"
+    },
+    {
+        "dmaId": 358,
+        "location": "Philadelphia"
+    },
+    {
+        "dmaId": 359,
+        "location": "Phoenix"
+    },
+    {
+        "dmaId": 360,
+        "location": "Pittsburgh"
+    },
+    {
+        "dmaId": 361,
+        "location": "Portland - Auburn"
+    },
+    {
+        "dmaId": 362,
+        "location": "Portland, OR"
+    },
+    {
+        "dmaId": 363,
+        "location": "Presque Isle"
+    },
+    {
+        "dmaId": 364,
+        "location": "Providence - New Bedford"
+    },
+    {
+        "dmaId": 365,
+        "location": "Quincy - Hannibal - Keokuk"
+    },
+    {
+        "dmaId": 366,
+        "location": "Raleigh - Durham (Fayetteville)"
+    },
+    {
+        "dmaId": 367,
+        "location": "Rapid City"
+    },
+    {
+        "dmaId": 368,
+        "location": "Reno"
+    },
+    {
+        "dmaId": 369,
+        "location": "Richmond - Petersburg"
+    },
+    {
+        "dmaId": 370,
+        "location": "Roanoke - Lynchburg"
+    },
+    {
+        "dmaId": 371,
+        "location": "Rochester - Mason City - Austin"
+    },
+    {
+        "dmaId": 372,
+        "location": "Rochester, NY"
+    },
+    {
+        "dmaId": 373,
+        "location": "Rockford"
+    },
+    {
+        "dmaId": 374,
+        "location": "Sacramento - Stockton - Modesto"
+    },
+    {
+        "dmaId": 375,
+        "location": "Saint Joseph"
+    },
+    {
+        "dmaId": 376,
+        "location": "Saint Louis"
+    },
+    {
+        "dmaId": 377,
+        "location": "Salisbury"
+    },
+    {
+        "dmaId": 378,
+        "location": "Salt Lake City"
+    },
+    {
+        "dmaId": 379,
+        "location": "San Angelo"
+    },
+    {
+        "dmaId": 380,
+        "location": "San Antonio"
+    },
+    {
+        "dmaId": 381,
+        "location": "San Diego"
+    },
+    {
+        "dmaId": 382,
+        "location": "San Francisco - Oakland - San Jose"
+    },
+    {
+        "dmaId": 383,
+        "location": "Santa Barbara - Santa Maria - San Luis Obispo"
+    },
+    {
+        "dmaId": 384,
+        "location": "Savannah"
+    },
+    {
+        "dmaId": 385,
+        "location": "Seattle - Tacoma"
+    },
+    {
+        "dmaId": 386,
+        "location": "Sherman - Ada"
+    },
+    {
+        "dmaId": 387,
+        "location": "Shreveport"
+    },
+    {
+        "dmaId": 388,
+        "location": "Sioux City"
+    },
+    {
+        "dmaId": 389,
+        "location": "Sioux Falls (Mitchell)"
+    },
+    {
+        "dmaId": 390,
+        "location": "South Bend - Elkhart"
+    },
+    {
+        "dmaId": 391,
+        "location": "Spokane"
+    },
+    {
+        "dmaId": 392,
+        "location": "Springfield - Holyoke"
+    },
+    {
+        "dmaId": 393,
+        "location": "Springfield, MO"
+    },
+    {
+        "dmaId": 394,
+        "location": "Syracuse"
+    },
+    {
+        "dmaId": 395,
+        "location": "Tallahassee - Thomasville"
+    },
+    {
+        "dmaId": 396,
+        "location": "Tampa - Saint Petersburg (Sarasota)"
+    },
+    {
+        "dmaId": 397,
+        "location": "Terre Haute"
+    },
+    {
+        "dmaId": 398,
+        "location": "Toledo"
+    },
+    {
+        "dmaId": 399,
+        "location": "Topeka"
+    },
+    {
+        "dmaId": 400,
+        "location": "Traverse City - Cadillac"
+    },
+    {
+        "dmaId": 401,
+        "location": "Tri-Cities, TN-VA"
+    },
+    {
+        "dmaId": 402,
+        "location": "Tucson (Sierra Vista)"
+    },
+    {
+        "dmaId": 403,
+        "location": "Tulsa"
+    },
+    {
+        "dmaId": 404,
+        "location": "Twin Falls"
+    },
+    {
+        "dmaId": 405,
+        "location": "Tyler - Longview (Lufkin & Nacogdoches)"
+    },
+    {
+        "dmaId": 406,
+        "location": "Utica"
+    },
+    {
+        "dmaId": 407,
+        "location": "Victoria"
+    },
+    {
+        "dmaId": 408,
+        "location": "Waco - Temple - Bryan"
+    },
+    {
+        "dmaId": 409,
+        "location": "Washington DC (Hagerstown)"
+    },
+    {
+        "dmaId": 410,
+        "location": "Watertown"
+    },
+    {
+        "dmaId": 411,
+        "location": "Wausau - Rhinelander"
+    },
+    {
+        "dmaId": 412,
+        "location": "West Palm Beach - Fort Pierce"
+    },
+    {
+        "dmaId": 413,
+        "location": "Wheeling - Steubenville"
+    },
+    {
+        "dmaId": 414,
+        "location": "Wichita - Hutchinson"
+    },
+    {
+        "dmaId": 415,
+        "location": "Wichita Falls & Lawton"
+    },
+    {
+        "dmaId": 416,
+        "location": "Wilkes Barre - Scranton"
+    },
+    {
+        "dmaId": 417,
+        "location": "Wilmington"
+    },
+    {
+        "dmaId": 418,
+        "location": "Yakima - Pasco - Richland - Kennewick"
+    },
+    {
+        "dmaId": 419,
+        "location": "Youngstown"
+    },
+    {
+        "dmaId": 420,
+        "location": "Yuma - El Centro"
+    },
+    {
+        "dmaId": 421,
+        "location": "Zanesville"
+    },
+    {
+        "dmaId": 422,
+        "location": "Northern New Jersey"
+    },
+    {
+        "dmaId": 500,
+        "location": "All of Canada"
+    },
+    {
+        "dmaId": 501,
+        "location": "Barrie-Orillia"
+    },
+    {
+        "dmaId": 502,
+        "location": "Belleville-Peterborough"
+    },
+    {
+        "dmaId": 503,
+        "location": "Owen Sound"
+    },
+    {
+        "dmaId": 504,
+        "location": "Burnaby-New Westminster-Surrey"
+    },
+    {
+        "dmaId": 505,
+        "location": "Calgary-Banff"
+    },
+    {
+        "dmaId": 506,
+        "location": "Edmonton"
+    },
+    {
+        "dmaId": 507,
+        "location": "Fraser Valley"
+    },
+    {
+        "dmaId": 508,
+        "location": "Hamilton-Niagara"
+    },
+    {
+        "dmaId": 509,
+        "location": "Kitchener-Waterloo"
+    },
+    {
+        "dmaId": 510,
+        "location": "London-Sarnia"
+    },
+    {
+        "dmaId": 511,
+        "location": "Mississauga-Oakville"
+    },
+    {
+        "dmaId": 512,
+        "location": "Newfoundland"
+    },
+    {
+        "dmaId": 513,
+        "location": "NWT"
+    },
+    {
+        "dmaId": 514,
+        "location": "New Brunswick"
+    },
+    {
+        "dmaId": 515,
+        "location": "Northern Ontario"
+    },
+    {
+        "dmaId": 516,
+        "location": "Nova Scotia"
+    },
+    {
+        "dmaId": 517,
+        "location": "Nunavit"
+    },
+    {
+        "dmaId": 518,
+        "location": "Okanagan-Kootenays"
+    },
+    {
+        "dmaId": 519,
+        "location": "Ottawa-Gatineau"
+    },
+    {
+        "dmaId": 520,
+        "location": "PEI"
+    },
+    {
+        "dmaId": 521,
+        "location": "Prince George-North"
+    },
+    {
+        "dmaId": 522,
+        "location": "Montreal and Surrounding Area"
+    },
+    {
+        "dmaId": 523,
+        "location": "Red Deer"
+    },
+    {
+        "dmaId": 524,
+        "location": "Saskatchewan"
+    },
+    {
+        "dmaId": 527,
+        "location": "Toronto"
+    },
+    {
+        "dmaId": 528,
+        "location": "Vancouver"
+    },
+    {
+        "dmaId": 529,
+        "location": "Sunshine Coast-Islands"
+    },
+    {
+        "dmaId": 530,
+        "location": "Winnipeg-Brandon"
+    },
+    {
+        "dmaId": 531,
+        "location": "Yukon"
+    },
+    {
+        "dmaId": 601,
+        "location": "All of United Kingdom"
+    },
+    {
+        "dmaId": 602,
+        "location": "London"
+    },
+    {
+        "dmaId": 603,
+        "location": "South"
+    },
+    {
+        "dmaId": 604,
+        "location": "Midlands and Central"
+    },
+    {
+        "dmaId": 605,
+        "location": "Wales and North West"
+    },
+    {
+        "dmaId": 606,
+        "location": "North and North East"
+    },
+    {
+        "dmaId": 607,
+        "location": "Scotland"
+    },
+    {
+        "dmaId": 608,
+        "location": "All of Ireland"
+    },
+    {
+        "dmaId": 609,
+        "location": "Northern Ireland"
+    },
+    {
+        "dmaId": 610,
+        "location": "Germany"
+    },
+    {
+        "dmaId": 611,
+        "location": "Netherlands"
+    },
+    {
+        "dmaId": 612,
+        "location": "Sweden"
+    },
+    {
+        "dmaId": 613,
+        "location": "Turkey"
+    },
+    {
+        "dmaId": 701,
+        "location": "All of Australia"
+    },
+    {
+        "dmaId": 702,
+        "location": "New South Wales/Australian Capital Territory"
+    },
+    {
+        "dmaId": 703,
+        "location": "Queensland"
+    },
+    {
+        "dmaId": 704,
+        "location": "Western Australia"
+    },
+    {
+        "dmaId": 705,
+        "location": "Victoria/Tasmania"
+    },
+    {
+        "dmaId": 750,
+        "location": "All of New Zealand"
+    },
+    {
+        "dmaId": 751,
+        "location": "North Island"
+    },
+    {
+        "dmaId": 752,
+        "location": "South Island"
+    },
+    {
+        "dmaId": 801,
+        "location": "All of Mexico"
+    },
+    {
+        "dmaId": 802,
+        "location": "Mexico City and Metropolitan Area"
+    },
+    {
+        "dmaId": 803,
+        "location": "Monterrey"
+    },
+    {
+        "dmaId": 804,
+        "location": "Guadalajara"
+    },
+    {
+        "dmaId": 901,
+        "location": "All of Spain"
+    },
+    {
+        "dmaId": 902,
+        "location": "Barcelona"
+    },
+    {
+        "dmaId": 903,
+        "location": "Madrid"
+    }
+]
