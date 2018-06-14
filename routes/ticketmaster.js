@@ -11,19 +11,22 @@ const locationList = require('../db/seed/dma');
 
 
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
-router.get('/concerts/:location/:genre', (req, res) => {
+router.get('/concerts/:location/:genre', (req, res, next) => {
   const { location, genre } = req.params;
   const genreObj = genreList.find(item => item.genre === genre);
   const genreId = genreObj.id;
   const locationObj = locationList.find(item => item.location === location);
   const locationId = locationObj.dmaId;
   const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreId}&dmaId=${locationId}&apikey=${TICKETMASTERAPIKEY}`;
-  console.log(url);
   request({
     url: url,
     method: 'GET',
     json: true
   }, (err, response, body) => {
+    if (!body._embedded) {
+      err = new Error('Ticketmaster Api not returning any events');
+      return next(err);
+    }
     let array = body._embedded.events;
     let concerts = array.map(item => {
       return {
