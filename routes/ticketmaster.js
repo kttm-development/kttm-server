@@ -5,13 +5,18 @@ const router = express.Router();
 const {TICKETMASTERAPIKEY}  = require('../config.js');
 const request = require('ajax-request');
 const mongoose = require('mongoose');
+const genreList = require('../db/seed/genres');
 
 
 
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
 router.get('/concerts/:location/:genre', (req, res) => {
   const { location, genre } = req.params;
-  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genre}&dmaId=${location}&apikey=${TICKETMASTERAPIKEY}`;
+  console.log(location);
+  const genreObj = genreList.find(item => item.genre === genre);
+  const genreId = genreObj.id;
+  console.log(genreId);
+  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreId}&dmaId=${location}&apikey=${TICKETMASTERAPIKEY}`;
   request({
     url: url,
     method: 'GET',
