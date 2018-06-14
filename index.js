@@ -18,6 +18,7 @@ const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const ticketmasterRouter = require('./routes/ticketmaster');
 const genreRouter = require('./routes/genres');
+const locationsRouter = require('./routes/locations');
 
 
 const app = express();
@@ -44,6 +45,7 @@ passport.use(jwtStrategy);
 app.use('/api', authRouter);
 app.use('/api', usersRouter);
 app.use('/api', genreRouter);
+app.use('/api', locationsRouter);
 
 
 function runServer(port = PORT) {
