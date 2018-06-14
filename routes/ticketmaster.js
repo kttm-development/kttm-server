@@ -33,7 +33,7 @@ router.get('/concerts/:location/:genre', (req, res, next) => {
         id: item.id,
         name: item.name,
         img: item.images[0].url,
-        location: `${item._embedded.venues[0].name}` + ` ${item._embedded.venues[0].city.name}` + ` ${item._embedded.venues[0].address.line1}`,
+        venue: `${item._embedded.venues[0].name}` + ` ${item._embedded.venues[0].city.name}` + ` ${item._embedded.venues[0].address.line1}`,
         date: item.dates.start.localDate,
         time: item.dates.start.localTime
       };
