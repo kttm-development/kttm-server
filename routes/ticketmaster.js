@@ -24,7 +24,8 @@ router.get('/concerts/:location/:genre', (req, res, next) => {
     json: true
   }, (err, response, body) => {
     if (!body._embedded) {
-      err = new Error('Ticketmaster Api not returning any events');
+      err = new Error('Sorry, there were no concerts found matching your criteria');
+      err.status = 404;
       return next(err);
     }
     let array = body._embedded.events;
@@ -41,20 +42,5 @@ router.get('/concerts/:location/:genre', (req, res, next) => {
     res.json(concerts);
   });
 });
-
-// /* ========== GET/READ A SINGLE ITEM ========== */
-// router.get('/concerts/:id', (req, res, next) => {
-//   const { id } = req.params;
-
-// });
-
-/* ========== POST/CREATE AN ITEM ========== */
-
-
-/* ========== PUT/UPDATE A SINGLE ITEM ========== */
-
-
-/* ========== DELETE/REMOVE A SINGLE ITEM ========== */
-
 
 module.exports = router;
