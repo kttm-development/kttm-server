@@ -2,12 +2,12 @@
 
 const mongoose = require('mongoose');
 
-const locationSchema = new mongoose.Schema({
+const dmaSchema = new mongoose.Schema({
   location: {type: String, unique: true},
   dmaId: {type: Number}
 });
 
-locationSchema.set('toObject', {
+dmaSchema.set('toObject', {
   transform: function (doc, ret) {
     ret.id = ret._id;
     delete ret._id;
@@ -16,4 +16,4 @@ locationSchema.set('toObject', {
 });
 
 
-module.exports = mongoose.model('Location', locationSchema);
+module.exports = mongoose.model('Dma', dmaSchema);
