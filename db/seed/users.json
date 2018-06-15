@@ -22,5 +22,11 @@
         "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
         "firstName": "Kevin",
         "lastName": "Murphy"
+    },
+    {
+        "username" : "demouser",
+        "password" : "$2a$10$uW270mAlimpWuE60uRqPlO2PdvEirMWeacMCvvs24UK7bK5DPJBFO",
+        "firstName" : "kttm",
+        "lastName" : "org"
     }
 ]
