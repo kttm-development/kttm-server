@@ -2,14 +2,13 @@
 
 const express = require('express');
 const router = express.Router();
-const genres = require('../db/seed/genres');
+const Genre = require('../models/genre');
 
 
-router.get('/genres', (req,res) => {
-  const genreNames = genres.map(genre => {
-    return {genre: genre.genre};
-  });
+router.get('/genres', async (req,res) => {
+  const genreNames = await Genre.find({}, 'genre');
   res.json(genreNames);
 });
+
 
 module.exports = router;
