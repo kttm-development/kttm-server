@@ -3,28 +3,22 @@
 const express = require('express');
 const router = express.Router();
 const {TICKETMASTERAPIKEY}  = require('../config.js');
-const request = require('ajax-request');
-const mongoose = require('mongoose');
-const genreList = require('../db/seed/genres');
-const locationList = require('../db/seed/dma');
+const fetch = require('node-fetch');
+const Dma = require('../models/location');
+const Genre = require('../models/genre');
 
 
 
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
-router.get('/concerts/:location/:genre', (req, res, next) => {
+router.get('/concerts/:location/:genre', async (req, res, next) => {
   const { location, genre } = req.params;
-  const genreObj = genreList.find(item => item.genre === genre);
-  const genreId = genreObj.id;
-  const locationObj = locationList.find(item => item.location === location);
-  const locationId = locationObj.dmaId;
-  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreId}&dmaId=${locationId}&apikey=${TICKETMASTERAPIKEY}`;
-  request({
-    url: url,
-    method: 'GET',
-    json: true
-  }, (err, response, body) => {
+  const genreObj = await Genre.findOne({genre}, 'id');
+  const locationObj = await Dma.findOne({location}, 'dmaId');
+  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreObj.id}&dmaId=${locationObj.dmaId}&apikey=${TICKETMASTERAPIKEY}`;
+  const ticketMasterRes = await fetch(url);
+  const body = await ticketMasterRes.json();
     if (!body._embedded) {
-      err = new Error('Ticketmaster Api not returning any events');
+      const err = new Error('Ticketmaster Api not returning any events');
       return next(err);
     }
     let array = body._embedded.events;
@@ -39,8 +33,8 @@ router.get('/concerts/:location/:genre', (req, res, next) => {
       };
     });
     res.json(concerts);
-  });
 });
+
 
 // /* ========== GET/READ A SINGLE ITEM ========== */
 // router.get('/concerts/:id', (req, res, next) => {
