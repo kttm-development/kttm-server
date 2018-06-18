@@ -9,7 +9,7 @@ const { TEST_DATABASE_URL } = require('../config');
 
 const Genre = require('../models/genre');
 const seedGenres = require('../db/seed/genres');
-const Location = require('../models/location');
+const Dma = require('../models/location');
 const seedLocations = require('../db/seed/dma');
 
 const expect = chai.expect;
@@ -24,9 +24,12 @@ describe('KTTM API - TicketMaster', function () {
   });
 
   beforeEach(function () {
-    Genre.insertMany(seedGenres);
-    Location.insertMany(seedLocations);
-
+    return Promise.all([ 
+      Genre.insertMany(seedGenres),
+      Genre.createIndexes(),
+      Dma.insertMany(seedLocations),
+      Dma.createIndexes()
+    ]);
   });
 
   afterEach(function () {
