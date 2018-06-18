@@ -46,12 +46,12 @@ describe('KTTM API - TicketMaster', function () {
         'genre': 'Hip-Hop-Rap',
       };
       return chai.request(app)
-        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}/1`)
+        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}/0`)
         .then((res) => {
           expect(res).to.have.status(200);
           expect(res).to.be.json;
           expect(res.body).to.be.an('object');
-          expect(res.body.concerts[0]).to.have.keys('id', 'name', 'image', 'venue', 'date', 'time', 'city', 'state');
+          expect(res.body.concerts[0]).to.have.keys('id', 'name', 'image', 'venue', 'date', 'time', 'city', 'state', 'description', 'url', 'attraction');
         });
     });
     it('should return no concerts found', function () {
