@@ -29,6 +29,14 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
   }
   let array = body._embedded.events;
   let concerts = array.map(item => {
+    let description = null;
+    if (item.info){
+      description = item.info;
+    }
+    let attraction = null;
+    if (item._embedded.attractions){
+      attraction = item._embedded.attractions[0].name;
+    }
     return {
       id: item.id,
       name: item.name,
@@ -37,7 +45,10 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
       date: item.dates.start.localDate,
       time: item.dates.start.localTime,
       city: item._embedded.venues[0].city.name,
-      state: item._embedded.venues[0].state.stateCode
+      state: item._embedded.venues[0].state.stateCode,
+      description,
+      url: item.url,
+      attraction
     };
   });
   res.json({concerts, isLastPage});
