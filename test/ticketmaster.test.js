@@ -36,20 +36,19 @@ describe('KTTM API - TicketMaster', function () {
   after(function () {
     return mongoose.disconnect();
   });
-  describe('GET /api/concerts/:location/:genre', function () {
+  describe('GET /api/concerts/:location/:genre/:page`', function () {
     it('should return the correct concerts search', function () {
       const searchQuery = {
         'location': 'New York',
-        'genre': 'Hip-Hop-Rap'
+        'genre': 'Hip-Hop-Rap',
       };
       return chai.request(app)
-        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}`)
+        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}/1`)
         .then((res) => {
           expect(res).to.have.status(200);
           expect(res).to.be.json;
-          expect(res.body).to.be.an('array');
-          expect(res.body.length).to.equal(20);
-          expect(res.body[0]).to.have.keys('id', 'name', 'image', 'venue', 'date', 'time', 'city', 'state');
+          expect(res.body).to.be.an('object');
+          expect(res.body.concerts[0]).to.have.keys('id', 'name', 'image', 'venue', 'date', 'time', 'city', 'state');
         });
     });
     it('should return no concerts found', function () {
@@ -58,7 +57,7 @@ describe('KTTM API - TicketMaster', function () {
         'genre': 'Hip-Hop-Rap'
       };
       return chai.request(app)
-        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}`)
+        .get(`/api/concerts/${searchQuery.location}/${searchQuery.genre}/1`)
         .catch(err => err.response)
         .then((res) => {
           expect(res).to.have.status(404);
