@@ -18,10 +18,14 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
   console.log(url);
   const ticketMasterRes = await fetch(url);
   const body = await ticketMasterRes.json();
+  let isLastPage = false;
   if (body.page.totalElements === 0) {
     const err = new Error('Sorry, there were no concerts found matching your criteria');
     err.status = 404;
     return next(err);
+  }
+  if ((body.page.totalPages - 1) === Number(page)) {
+    isLastPage = true;
   }
   let array = body._embedded.events;
   let concerts = array.map(item => {
@@ -36,7 +40,7 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
       state: item._embedded.venues[0].state.stateCode
     };
   });
-  res.json({concerts});
+  res.json({concerts, isLastPage});
 });
 
 module.exports = router;
