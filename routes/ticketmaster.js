@@ -29,7 +29,9 @@ router.get('/concerts/:location/:genre', async (req, res, next) => {
         image: item.images[0].url,
         venue: `${item._embedded.venues[0].name}` + ` ${item._embedded.venues[0].city.name}` + ` ${item._embedded.venues[0].address.line1}`,
         date: item.dates.start.localDate,
-        time: item.dates.start.localTime
+        time: item.dates.start.localTime,
+        city: item._embedded.venues[0].city.name,
+        state: item._embedded.venues[0].state.stateCode
       };
     });
     res.json(concerts);
