@@ -18,7 +18,7 @@ router.get('/concerts/:location/:genre', async (req, res, next) => {
   const ticketMasterRes = await fetch(url);
   const body = await ticketMasterRes.json();
     if (!body._embedded) {
-      err = new Error('Sorry, there were no concerts found matching your criteria');
+      const err = new Error('Sorry, there were no concerts found matching your criteria');
       err.status = 404;
       return next(err);
     }
