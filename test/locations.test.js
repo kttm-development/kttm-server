@@ -6,7 +6,7 @@ const chaiHttp = require('chai-http');
 const mongoose = require('mongoose');
 const { TEST_DATABASE_URL } = require('../config');
 
-const Location = require('../models/location');
+const Dma = require('../models/location');
 
 const seedLocations = require('../db/seed/dma');
 
@@ -21,7 +21,7 @@ describe('KTTM API - Locations', function () {
   });
 
   beforeEach(function () {
-    return Location.insertMany(seedLocations);
+    return Dma.insertMany(seedLocations);
 
   });
 
