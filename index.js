@@ -48,7 +48,7 @@ app.use('/api', genreRouter);
 app.use('/api', locationsRouter);
 
 
-
+// Catch-all 404
 app.use(function (req, res, next) {
   const err = new Error('Not Found');
   err.status = 404;
@@ -73,6 +73,7 @@ function runServer(port = PORT) {
     })
     .on('error', err => {
       console.error('Express failed to start');
+      console.error('\n === Did you remember to start `mongod`? === \n');
       console.error(err);
     });
 }
@@ -82,4 +83,4 @@ if (require.main === module) {
   runServer();
 }
 
-module.exports = { app };
+module.exports = app; // Export for testing
