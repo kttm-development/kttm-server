@@ -29,7 +29,7 @@ router.post('/favorites', jwtAuth, async (req, res) => {
     const userId = req.user.id;
     const newItem = { name, attraction, city, date, id, image, state, time, url, venue, userId, description };
     const favorites = await Favorite.create(newItem);
-    res.location(`${req.originalUrl}/${result.id}`).status(201).json(favorites);
+    res.location(`${req.originalUrl}/${res.id}`).status(201).json(favorites);
 });
 
 
