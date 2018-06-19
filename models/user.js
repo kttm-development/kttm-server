@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
   username: { type: String, unique: true, required: true },
   password: {type: String, required: true},
   firstName: {type: String},
-  lastName: {type: String}
+  lastName: {type: String},
+  favorites: {type: Array, ref: 'Favorite'}
 });
 
 userSchema.set('toObject', {
