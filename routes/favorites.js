@@ -31,4 +31,14 @@ router.post('/favorites', jwtAuth, async (req, res) => {
     res.location(`${req.originalUrl}/${result.id}`).status(201).json(favorites);
 });
 
+
+
+// DELETE:  user favorites
+router.delete('/favorites/:id', jwtAuth, async (req, res) => {
+    const { id } = req.params;
+    const userId = req.user.id;
+    await Favorite.findOneAndRemove({ _id: id, userId  });
+    res.status(204).end();
+});
+
 module.exports = router;
