@@ -19,6 +19,7 @@ const authRouter = require('./routes/auth');
 const ticketmasterRouter = require('./routes/ticketmaster');
 const genreRouter = require('./routes/genres');
 const locationsRouter = require('./routes/locations');
+const favoritesRouter = require('./routes/favorites');
 
 
 const app = express();
@@ -35,17 +36,27 @@ app.use(
   })
 );
 
-app.use('/api', ticketmasterRouter);
+
 app.use(express.json());
 
 
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
+
+// Mount router on "/api"
 app.use('/api', authRouter);
 app.use('/api', usersRouter);
+app.use('/api', ticketmasterRouter);
 app.use('/api', genreRouter);
 app.use('/api', locationsRouter);
+
+
+// Endpoints below this require a valid JWT
+app.use(passport.authenticate('jwt', { session: false, failWithError: true }));
+
+/* ========== LOCKED ENDPOINTS BELOW MUST KEEP UNDER THIS LINE ========== */
+app.use('/api', favoritesRouter);
 
 
 // Catch-all 404
