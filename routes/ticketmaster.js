@@ -8,7 +8,6 @@ const Dma = require('../models/location');
 const Genre = require('../models/genre');
 
 
-
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
 router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
   const { location, genre, page } = req.params;
@@ -48,10 +47,24 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
       state: item._embedded.venues[0].state.stateCode,
       description,
       url: item.url,
-      attraction
+      attraction,
+      coords: {lat: Number(item._embedded.venues[0].location.latitude), lng: Number(item._embedded.venues[0].location.longitude)}
     };
   });
-  res.json({concerts, isLastPage});
+  const mapCenter = getCenter(concerts);
+  res.json({concerts, isLastPage, mapCenter});
 });
+
+
+const getCenter = (arr) => {
+  const sumObj = arr.reduce((result, item) => {
+    result.lat = result.lat + item.coords.lat;
+    result.lng = result.lng + item.coords.lng;
+    return result;
+  }, {lat: 0, lng: 0});
+  return {lat: sumObj.lat/arr.length, lng: sumObj.lng/arr.length}
+}
+
+
 
 module.exports = router;
