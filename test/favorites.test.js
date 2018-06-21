@@ -25,7 +25,7 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 
-describe.only('KTTM API - Favorites', function () {
+describe('KTTM API - Favorites', function () {
 
   before(function () {
     return mongoose.connect(TEST_DATABASE_URL)

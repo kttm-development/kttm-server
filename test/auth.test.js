@@ -22,7 +22,7 @@ const password = 'examplePass';
 
 
 
-describe('KTTM API - Login', function () {
+describe('KTTM API - Auth', function () {
 
   before(function () {
     return mongoose.connect(TEST_DATABASE_URL)
@@ -57,7 +57,7 @@ describe('KTTM API - Login', function () {
           const payload = jwt.verify(res.body.authToken, JWT_SECRET);
 
           expect(payload.user).to.not.have.property('password');
-          expect(payload.user).to.have.keys(['id', 'username', 'firstName', 'lastName']);
+          expect(payload.user).to.have.keys(['id', 'username', 'firstName', 'lastName', 'favorites']);
           expect(payload.user.username).to.equal(username);     
         });
     });
