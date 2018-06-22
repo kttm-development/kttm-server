@@ -20,6 +20,8 @@ const ticketmasterRouter = require('./routes/ticketmaster');
 const genreRouter = require('./routes/genres');
 const locationsRouter = require('./routes/locations');
 const favoritesRouter = require('./routes/favorites');
+const contactsRouter = require('./routes/contacts');
+
 
 
 const app = express();
@@ -50,6 +52,8 @@ app.use('/api', usersRouter);
 app.use('/api', ticketmasterRouter);
 app.use('/api', genreRouter);
 app.use('/api', locationsRouter);
+app.use('/api', contactsRouter);
+
 
 
 // Endpoints below this require a valid JWT
