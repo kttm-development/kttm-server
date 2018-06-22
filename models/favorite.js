@@ -6,7 +6,7 @@ const favoriteSchema = new mongoose.Schema({
   name: { type: String },
   attraction: { type: String },
   city: { type: String },
-  date: { type: Date },
+  date: { type: String },
   id: { type: String },
   image: { type: String },
   state: { type: String },
