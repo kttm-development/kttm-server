@@ -57,7 +57,7 @@ describe('KTTM API - Auth', function () {
           const payload = jwt.verify(res.body.authToken, JWT_SECRET);
 
           expect(payload.user).to.not.have.property('password');
-          expect(payload.user).to.have.keys(['id', 'username', 'firstName', 'lastName', 'favorites']);
+          expect(payload.user).to.have.keys(['id', 'username', 'firstName', 'lastName', 'favorites', 'contacts']);
           expect(payload.user.username).to.equal(username);     
         });
     });
