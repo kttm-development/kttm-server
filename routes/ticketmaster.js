@@ -48,13 +48,12 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
       description,
       url: item.url,
       attraction,
-      coords: {lat: Number(item._embedded.venues[0].location.latitude), lng: Number(item._embedded.venues[0].location.longitude)},
-      isOpen: false
+      coords: {lat: Number(item._embedded.venues[0].location.latitude), lng: Number(item._embedded.venues[0].location.longitude)}
     };
   });
-  const duplicates = checkDuplicateMarkers(concerts);
+  const markers = checkDuplicateMarkers(concerts);
   const mapCenter = getCenter(concerts);
-  res.json({concerts, isLastPage, mapCenter, duplicates});
+  res.json({concerts, isLastPage, mapCenter, markers});
 });
 
 
