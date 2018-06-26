@@ -51,8 +51,9 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
       coords: {lat: Number(item._embedded.venues[0].location.latitude), lng: Number(item._embedded.venues[0].location.longitude)}
     };
   });
+  const markers = checkDuplicateMarkers(concerts);
   const mapCenter = getCenter(concerts);
-  res.json({concerts, isLastPage, mapCenter});
+  res.json({concerts, isLastPage, mapCenter, markers});
 });
 
 
@@ -63,6 +64,23 @@ const getCenter = (arr) => {
     return result;
   }, {lat: 0, lng: 0});
   return {lat: sumObj.lat/arr.length, lng: sumObj.lng/arr.length}
+}
+
+const checkDuplicateMarkers = (arr) => {
+  const prevLocations = [];
+  arr.forEach((item,index) => {
+    let isDuplicate = false;
+    prevLocations.forEach(location => {
+      if(location.lat === item.coords.lat && location.lng === item.coords.lng) {
+        isDuplicate = true;
+        location.name.push(index);
+      }
+    })
+    if (!isDuplicate) {
+      prevLocations.push({...item.coords, name: [index]});
+    }
+  })
+  return prevLocations;
 }
 
 
