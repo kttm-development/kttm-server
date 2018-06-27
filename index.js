@@ -52,7 +52,6 @@ app.use('/api', usersRouter);
 app.use('/api', ticketmasterRouter);
 app.use('/api', genreRouter);
 app.use('/api', locationsRouter);
-app.use('/api', contactsRouter);
 
 
 
@@ -61,6 +60,7 @@ app.use('/api', contactsRouter);
 
 /* ========== LOCKED ENDPOINTS BELOW MUST KEEP UNDER THIS LINE ========== */
 app.use('/api', favoritesRouter);
+app.use('/api', contactsRouter);
 
 
 // Catch-all 404
