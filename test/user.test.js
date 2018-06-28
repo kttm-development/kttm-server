@@ -51,7 +51,7 @@ describe('KTTM API - Users', function () {
             res = _res;
             expect(res).to.have.status(201);
             expect(res.body).to.be.an('object');
-            expect(res.body).to.have.keys('id', 'username', 'firstName', 'lastName', 'favorites');
+            expect(res.body).to.have.keys('id', 'username', 'firstName', 'lastName', 'favorites', 'contacts');
             expect(res.body.id).to.exist;
             expect(res.body.username).to.equal(username);
             expect(res.body.firstName).to.equal(firstName);
@@ -195,8 +195,8 @@ describe('KTTM API - Users', function () {
           })
           .catch(err => err.response)
           .then(res => {
-            expect(res).to.have.status(400);
-            expect(res.body.message).to.equal('The username already exists');
+            expect(res).to.have.status(422);
+            expect(res.body.message).to.equal('Username already taken');
           });
       });
 
@@ -208,7 +208,7 @@ describe('KTTM API - Users', function () {
           .then(res => {
             expect(res).to.have.status(201);
             expect(res.body).to.be.an('object');
-            expect(res.body).to.have.keys('username', 'firstName', 'lastName', 'id', 'favorites');
+            expect(res.body).to.have.keys('username', 'firstName', 'lastName', 'id', 'favorites', 'contacts');
             expect(res.body.username).to.equal(username);
             expect(res.body.firstName).to.equal(firstName);
             return User.findOne({ username });
@@ -227,7 +227,7 @@ describe('KTTM API - Users', function () {
           .then(res => {
             expect(res).to.have.status(201);
             expect(res.body).to.be.an('object');
-            expect(res.body).to.have.keys('username', 'lastName', 'firstName', 'id', 'favorites');
+            expect(res.body).to.have.keys('username', 'lastName', 'firstName', 'id', 'favorites', 'contacts');
             expect(res.body.username).to.equal(username);
             expect(res.body.lastName).to.equal(lastName);
             return User.findOne({ username });

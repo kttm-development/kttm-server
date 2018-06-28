@@ -8,7 +8,6 @@ const Dma = require('../models/location');
 const Genre = require('../models/genre');
 
 
-
 /* ========== GET/READ ALL CONCERTS IN DMA REGION & GENRE FILTER ========== */
 router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
   const { location, genre, page } = req.params;
@@ -37,21 +36,76 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
     if (item._embedded.attractions){
       attraction = item._embedded.attractions[0].name;
     }
+    let time = item.dates.start.localTime;
+    if (time) {
+      time = convertTime(time);
+    }
     return {
       id: item.id,
       name: item.name,
       image: item.images[0].url,
       venue: `${item._embedded.venues[0].name}` + ` ${item._embedded.venues[0].city.name}` + ` ${item._embedded.venues[0].address.line1}`,
       date: item.dates.start.localDate,
-      time: item.dates.start.localTime,
+      time,
       city: item._embedded.venues[0].city.name,
       state: item._embedded.venues[0].state.stateCode,
       description,
       url: item.url,
-      attraction
+      attraction,
+      coords: {lat: Number(item._embedded.venues[0].location.latitude), lng: Number(item._embedded.venues[0].location.longitude)}
     };
   });
-  res.json({concerts, isLastPage});
+  const markers = checkDuplicateMarkers(concerts);
+  const mapCenter = getCenter(concerts);
+  res.json({concerts, isLastPage, mapCenter, markers});
 });
+
+
+const getCenter = (arr) => {
+  const sumObj = arr.reduce((result, item) => {
+    result.lat = result.lat + item.coords.lat;
+    result.lng = result.lng + item.coords.lng;
+    return result;
+  }, {lat: 0, lng: 0});
+  return {lat: sumObj.lat/arr.length, lng: sumObj.lng/arr.length}
+}
+
+const checkDuplicateMarkers = (arr) => {
+  const prevLocations = [];
+  arr.forEach((item,index) => {
+    let isDuplicate = false;
+    prevLocations.forEach(location => {
+      if(location.lat === item.coords.lat && location.lng === item.coords.lng) {
+        isDuplicate = true;
+        location.name.push(index);
+      }
+    })
+    if (!isDuplicate) {
+      prevLocations.push({...item.coords, name: [index]});
+    }
+  })
+  return prevLocations;
+}
+
+const convertTime = (time) => {
+  const timeArr = time.split(':');
+  let hours = Number(timeArr[0]);
+  if (hours > 12) {
+    hours -= 12;
+    timeArr[2] = 'PM';
+  } 
+  else if (hours === 12) {
+    timeArr[2] = 'PM'
+  }
+  else if (hours === 0) {
+    hours = 12;
+    timeArr[2] = 'AM';
+  }
+  else {
+    timeArr[2] = 'AM';
+  }
+  return `${hours}:${timeArr[1]} ${timeArr[2]}`
+}
+
 
 module.exports = router;
