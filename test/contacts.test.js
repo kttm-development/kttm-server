@@ -47,7 +47,7 @@ describe('KTTM API - Contacts', function () {
   after(function () {
     return mongoose.disconnect();
   });
-  it.only('should return contacts', function () {
+  it('should return contacts', function () {
     const { username } = seedUsers[0];
     return chai.request(app)
       .post('/api/login')

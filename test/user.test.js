@@ -195,8 +195,8 @@ describe('KTTM API - Users', function () {
           })
           .catch(err => err.response)
           .then(res => {
-            expect(res).to.have.status(400);
-            expect(res.body.message).to.equal('The username already exists');
+            expect(res).to.have.status(422);
+            expect(res.body.message).to.equal('Username already taken');
           });
       });
 
