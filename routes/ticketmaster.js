@@ -13,8 +13,7 @@ router.get('/concerts/:location/:genre/:page', async (req, res, next) => {
   const { location, genre, page } = req.params;
   const genreObj = await Genre.findOne({genre}, 'id');
   const locationObj = await Dma.findOne({location}, 'dmaId');
-  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreObj.id}&dmaId=${locationObj.dmaId}&page=${page}&apikey=${TICKETMASTERAPIKEY}`;
-  console.log(url);
+  const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&genreId=${genreObj.id}&sort=date,asc&dmaId=${locationObj.dmaId}&page=${page}&apikey=${TICKETMASTERAPIKEY}`;
   const ticketMasterRes = await fetch(url);
   const body = await ticketMasterRes.json();
   let isLastPage = false;
