@@ -3,8 +3,27 @@
 React.js client side app found here: [ConcertConnect Client Github](https://github.com/kttm-development/kttm-client)
 Live Version of the application can be found here: [ConcertConnect Live](https://concertconnect-client.herokuapp.com/)
 
+## API Documentation:
+* / = homepage
+* /login = login page
+* /register = registration page
+* /concerts = concert search page
+* /concert-about = about the concert page
+* /account =  account page with favorites and contacts
+
+## Tech Used:
+* Node.js
+* Express
+* Passport
+* MongoDB
+* Mocha/Chai
+
 ## Description:
 Server side for ConcertConnect. Uses Node.js, Express, and MongoDB. Comes with all authentication routes for creating new users and logging in. Other routes include interacting with Tickemasters API to search events, and routes to store user contacts and favorites. All routes come with integration testing.
+
+ConcertConnect is a web app created to help those who want to plan their entire concert experience. The app allows users to look for concerts based on their interests and location while also allowing the user to find tickets to and places to stay around a specific concert of their choosing. The user also has the ability to view YouTube videos of the main artist for a specific concert and to invite their friends with the click of a button.
+
+CC is a password-protected site with certain protected endpoints so that user is able to keep track of his/her contacts and favorited concerts. However, an unregistered user is still able to find concerts, tickets, and places to stay so that they can get a feel for the site as well. If an unregistered user would like to add a favorite or invite their friends, they are prompted to login or signup.
 
 ## Instructions:
     -clone this repo
