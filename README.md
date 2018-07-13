@@ -3,6 +3,14 @@
 React.js client side app found here: [ConcertConnect Client Github](https://github.com/kttm-development/kttm-client)
 Live Version of the application can be found here: [ConcertConnect Live](https://concertconnect-client.herokuapp.com/)
 
+## API Documentation:
+* / = homepage
+* /login = login page
+* /register = registration page
+* /concerts = concert search page
+* /concert-about = about the concert page
+* /account =  account page with favorites and contacts
+
 ## Description:
 Server side for ConcertConnect. Uses Node.js, Express, and MongoDB. Comes with all authentication routes for creating new users and logging in. Other routes include interacting with Tickemasters API to search events, and routes to store user contacts and favorites. All routes come with integration testing.
 
