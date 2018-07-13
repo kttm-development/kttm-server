@@ -11,6 +11,13 @@ Live Version of the application can be found here: [ConcertConnect Live](https:/
 * /concert-about = about the concert page
 * /account =  account page with favorites and contacts
 
+## Tech Used:
+* Node.js
+* Express
+* Passport
+* MongoDB
+* Mocha/Chai
+
 ## Description:
 Server side for ConcertConnect. Uses Node.js, Express, and MongoDB. Comes with all authentication routes for creating new users and logging in. Other routes include interacting with Tickemasters API to search events, and routes to store user contacts and favorites. All routes come with integration testing.
 
